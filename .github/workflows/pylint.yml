@@ -21,4 +21,4 @@ jobs:
     - name: Analysing the code with pylint
       if: github.ref != 'refs/heads/main'
       run: |
-        black $(git ls-files '*.py')
+        pytest 
